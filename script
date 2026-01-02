@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -x  #debugmode
+set -e  #exit the script when there is error
+set =o  #pipefails
+
+
+
+df -h
+
+free -g
+
+nproc
+
+ps -ef | grep python | awk -F" " '{print $2}'
